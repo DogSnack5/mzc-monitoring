@@ -1,0 +1,734 @@
+{
+	"name": "MZC-monitoring",
+	"description": "모니터링 설정을 위한 대시보드",
+	"widgets": [
+		{
+			"name": "Server status",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "agent_status",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, SERVER/agent_status",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Server is_rebooted",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "is_rebooted",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, SERVER/is_rebooted",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Server boot_time",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "boot_time",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, SERVER/boot_time",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Server avg_cpu_used_rto",
+			"type": "line",
+			"height": 277,
+			"width": 400,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "avg_cpu_used_rto",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, SERVER/avg_cpu_used_rto",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "CPU user&sys",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "avg_cpu_user_rto",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, SERVER/avg_cpu_user_rto",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "avg_cpu_sys_rto",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, SERVER/avg_cpu_sys_rto",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Memory mem_mb",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "mem_mb",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "memory"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, MEMORY/mem_mb",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Memory used_mem_mb",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "used_mem_mb",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "memory"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, MEMORY/used_mem_mb",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Memory free_mem_mb",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "free_mem_mb",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "memory"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, MEMORY/free_mem_mb",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Memory mem_usert",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "mem_usert",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "memory"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, MEMORY/mem_usert",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Memory swap_usert",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "swap_usert",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "memory"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, MEMORY/swap_usert",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Disk R&W_byt",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "read_byt_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#9467bd",
+					"displayName": "{resourceName}, (xvda)DISK/read_byt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "write_byt_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#8c564b",
+					"displayName": "{resourceName}, (xvda)DISK/write_byt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Disk R&W_cnt",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "read_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, (xvda)DISK/read_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "write_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, (xvda)DISK/write_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Disk avgrq/avgqu",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "avgqu_sz",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, (xvda)DISK/avgqu_sz",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "avgrq_sz",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, (xvda)DISK/avgrq_sz",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Disk await",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "await_tm",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"disk_idx": "xvda",
+						"type": "disk"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, (xvda)DISK/await_tm",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Disk used_rto",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "used_rto",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "disk"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, DISK/used_rto",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "File system all/used/free_ /",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "all_byt_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "fs",
+						"mnt_nm": "/"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, (fs, /)all_byt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "free_byt_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "fs",
+						"mnt_nm": "/"
+					},
+					"color": "#9467bd",
+					"displayName": "{resourceName}, (fs, /)free_byt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "used_byt_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "fs",
+						"mnt_nm": "/"
+					},
+					"color": "#8c564b",
+					"displayName": "{resourceName}, (fs, /)used_byt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "File system fs_usert_ /",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "fs_usert",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "fs",
+						"mnt_nm": "/"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, (/)FILE SYSTEM/fs_usert",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "File system ind_usert_ /",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "ind_usert",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "fs",
+						"mnt_nm": "/"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, (/)FILE SYSTEM/ind_usert",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "GAUAGE_TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Network snd/rcv_bps",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "rcv_bps",
+					"dimensions": {
+						"nic_desc": "eth0",
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, (eth0)NETWORK/rcv_bps",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "snd_bps",
+					"dimensions": {
+						"nic_desc": "eth0",
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, (eth0)NETWORK/snd_bps",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Network snd/rcv_pps",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "rcv_pps",
+					"dimensions": {
+						"nic_desc": "eth0",
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, (eth0)NETWORK/rcv_pps",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "snd_pps",
+					"dimensions": {
+						"nic_desc": "eth0",
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, (eth0)NETWORK/snd_pps",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Network snd/rcv_fail_packt",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "rcv_fail_packt_cnt",
+					"dimensions": {
+						"nic_desc": "eth0",
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#2ca02c",
+					"displayName": "{resourceName}, (eth0)NETWORK/rcv_fail_packt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				},
+				{
+					"metric": "snd_fail_packt_cnt",
+					"dimensions": {
+						"nic_desc": "eth0",
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#d62728",
+					"displayName": "{resourceName}, (eth0)NETWORK/snd_fail_packt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Network clsn_packt",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "clsn_packt_cnt",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "ntwk"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, (ntwk)clsn_packt_cnt",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		},
+		{
+			"name": "Server time_deviation",
+			"type": "line",
+			"height": 0,
+			"width": 0,
+			"x": 0,
+			"y": 0,
+			"metricsInfo": [
+				{
+					"metric": "time_deviation",
+					"dimensions": {
+						"instanceNo": "22176289",
+						"type": "svr"
+					},
+					"color": "#ff7f0e",
+					"displayName": "{resourceName}, (svr)time_deviation",
+					"prodKey": "460438474722512896",
+					"statistic": "AVG",
+					"period": "",
+					"tableDisplayType": "TEXT",
+					"condition": "EQ",
+					"threshold": "0"
+				}
+			]
+		}
+	]
+}
